@@ -22,7 +22,7 @@ import EffectComposer, {
 
     function init() {
       console.log(texture);
-      camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
+      camera = new THREE.PerspectiveCamera( 20, window.innerWidth / window.innerHeight, 0.01, 10 );
       camera.position.z = 0.5;
 
       scene = new THREE.Scene();
@@ -35,6 +35,7 @@ import EffectComposer, {
       scene.add( mesh );
 
       renderer = new THREE.WebGLRenderer( { antialias: true } );
+      // console.log(window.innerWidth, window.innerHeight)
       renderer.setSize( window.innerWidth, window.innerHeight );
       renderer.outputEncoding = THREE.sRGBEncoding;
       document.body.appendChild( renderer.domElement );

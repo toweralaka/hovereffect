@@ -1,5 +1,5 @@
 import FontFaceObserver from "fontfaceobserver";
-import imagesLoaded from "imagesLoaded";
+import imagesLoaded from "imagesloaded";
 import Scene from "./scene";
 
 const scene = new Scene("container");
